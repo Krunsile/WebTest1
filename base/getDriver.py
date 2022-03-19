@@ -7,5 +7,5 @@ class getDriver:
     def __init__(self):
         option = ChromeOptions()
         self.driver = webdriver.Chrome(options=option)
-        self.driver.get('http://www.swu.edu.cn/')
+        self.driver.get('https://www.baidu.com/')
         self.browserOperator = BrowserOperator(self.driver)
