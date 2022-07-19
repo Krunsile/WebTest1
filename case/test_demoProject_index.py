@@ -21,11 +21,7 @@ class TestIndex:
         self.indexPage.search_kw('西南大学')
         # assert_that('西南大学_百度搜索').is_equal_to(self.Driver.browserOperator.getTitle())
 
-    def test_1(self):
-        assert(1 == 1)
-
-    def test_2(self):
-        assert(1 == 2)
-
+    def test_search_1(self):
+        assert_that('1').is_equal_to('2')
     def teardown_class(self):
         self.Driver.browserOperator.close()

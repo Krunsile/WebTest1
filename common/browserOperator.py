@@ -590,3 +590,6 @@ class BrowserOperator:
 
     def close(self):
         self._driver.__exit__()
+
+    def demo(self):
+        self._driver.implicitly_wait(10)
